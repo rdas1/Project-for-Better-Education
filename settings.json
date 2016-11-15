@@ -1,0 +1,7 @@
+{
+  "galaxy.meteor.com": { 
+     "env": { 
+       "MONGO_URL": "mongodb://rdas2:Normandy3rd@ds023694.mlab.com:23694/pfbedb" 
+     } 
+   }
+}

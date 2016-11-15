@@ -1,0 +1,330 @@
+<body style="">
+	{{> home}}
+</body>
+
+<template name="home">
+	{{> navTemplate}}
+	{{> carouselTemplate}}
+	{{> missionTemplate}}
+	{{> solutionTemplate}}
+	{{> teamTemplate}}
+	{{> contactTemplate}}
+	{{> footerTemplate}}
+</template>
+
+
+<template name="navTemplate">
+	<header id="navigation">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="navbar animated fadeIn main-nav" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><!-- TODO: LINK TO HOME -->
+                    <h1><img class="img-responsive" src="/images/logo.png" alt="logo"></h1><!-- TODO: INSERT LOGO HERE -->
+                    </a>
+                </div>
+				<div class="top-bar">
+					<span class="contact-mail"><a href="#"><i class="fa fa-envelope-o"></i>email@ourwebsite.com</a></span>
+					<span><i class="fa fa-phone"></i>imma put the phone number here</span>
+				</div>
+                <nav class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                      <li><a id="homeLink"><span>Home</span></a></li>
+											<li><a id="missionLink"><span>Mission</span></a></li>
+                      <li><a id="solutionLink"><span>Solution</span></a></li>
+                      <li><a id="teamLink"><span>Team</span></a></li>
+                      <li><a id="contactLink"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><!--/#navigation-->
+</template>
+
+<template name="carouselTemplate">
+	<div id="carousel-wrapper">
+		<div id="main-carousel" class="carousel slide" data-ride="carousel" data-interval="10000"> <!-- milliseconds, 1000 = 1 sec so 10,000 = 10 sec -->
+			<ol class="carousel-indicators">
+				<li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#main-carousel" data-slide-to="1" class=""></li>
+				<li data-target="#main-carousel" data-slide-to="2" class=""></li>
+				<li data-target="#main-carousel" data-slide-to="3" class=""></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption container">
+						<h1 class="animated rollIn">Empowering Learners.</h1>
+						<p class="animated rollIn">Using mobile phones to provide quality education to all.</p>
+						<a id="missionLink" class="animated rollIn btn btn-primary">Coming January 2017</a>
+						<a href="#video" data-gallery="prettyPhoto" class="watch-video"><i class="fa fa-play"></i> Watch Video</a> <!-- TODO: LINK TO VIDEO -->
+					</div>
+				</div>
+				<div class="item" id="slide2">
+					<div class="carousel-caption container">
+						<h1 class="animated rollIn">Accessibility to the last mile.</h1>
+						<p class="animated rollIn">An SMS-capable mobile phone is all that's needed.</p>
+						<a id="missionLink" class="animated rollIn btn btn-primary">Coming January 2017</a>
+						<a href="#video" data-gallery="prettyPhoto" class="watch-video"><i class="fa fa-play"></i> Watch Video</a>
+					</div>
+				</div>
+				<div class="item" id="slide3">
+					<div class="carousel-caption container">
+						<h1 class="animated rollIn">Fostering collaboration.</h1>
+						<p class="animated rollIn">Using our specialized Harkness method to engage students all over the world.</p>
+						<a id="missionLink" class="animated rollIn btn btn-primary">Coming January 2017</a>
+						<a href="#video" data-gallery="prettyPhoto" class="watch-video"><i class="fa fa-play"></i> Watch Video</a>
+					</div>
+				</div>
+				<div class="item" id="slide4">
+					<div class="carousel-caption container">
+						<h1 class="animated rollIn">Breaking language barriers.</h1>
+						<p class="animated rollIn">Available in [some number] of languages.</p>
+						<a id="missionLink" class="animated rollIn btn btn-primary">Coming January 2017</a>
+						<a href="#video" data-gallery="prettyPhoto" class="watch-video"><i class="fa fa-play"></i> Watch Video</a>
+					</div>
+				</div>
+			</div>
+		</div> <!--/#main-carousel-->
+    </div><!--/#carousel-wrapper-->
+</template>
+
+<template name="missionTemplate">
+	<div id="who-we-are">
+		<div class="padding-top-two padding-bottom container">
+			<div class="section-title">
+				<h1>Mission</h1>
+			</div>
+			<p>According to UNESCO (United Nations Educational, Scientific, and Cultural Organization), education is essential for the exercise of all other human rights. But millions of people remain divested of educational opportunities as a result of the inherent drawbacks of their living conditions, such as poverty, gender discrimination, or warfare. Nearly 60 million children who are of age to be in primary school aren’t, and over 775 million adults are illiterate. <b>The Project for Better Education (PfBE) aims to provide underprivileged people, children and adults alike, with quality education through low-cost mobile devices.</b></p>
+		{{> IGCTemplate}}
+		{{> causesTemplate}}
+		</div>
+	</div><!--/#who-we-are-->
+</template>
+
+<template name="IGCTemplate">
+	<div id="who-we-are">
+		<div class="container">
+			<div class="section-title">
+				<h1>IGC</h1>
+			</div>
+			<p style="font-size:110%;">We also partner with IGC</p>
+		</div>
+	</div><!--/#who-we-are-->
+</template>
+
+<template name="causesTemplate">
+	<div id="cause-list">
+		<div class="container">
+			<div class="section-title">
+				<h2>Quality education can help solve...</h2>
+			</div>
+			<div id="cause-list-carousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="list-image border-one">
+									<img class="img-responsive" src="/images/1.jpg" alt="">
+								</div>
+								<div class="list-info">
+									<h2>Unemployment</h2>
+									<p>Over <span>200 million</span> working-age adults are unemployed.</p>
+									<p><span>Education and vocational training can assist greatly in finding jobs.</span></p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="list-image border-two">
+									<img class="img-responsive" src="/images/2.jpg" alt="">
+								</div>
+								<div class="list-info">
+									<h2>Illiteracy</h2>
+									<p><span>775 million</span> adults are illiterate, of which approximately <span>70%</span> are women.</p>
+									<p><span>If all of those people could read and write, innovation possibilities would be endless.</span></p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="list-image border-three">
+									<img class="img-responsive" src="/images/3.jpg" alt="">
+								</div>
+								<div class="list-info">
+									<h2>Healthcare</h2>
+									<p><span>1 million</span> people die from mosquito-borne diseases each year, and <span>95%</span> of all HIV positive children live in Sub-Saharan Africa or South Asia.</p>
+									<p><span>If every doctor received better training, these rates would plummet.</span></p>
+								</div>
+							</div>
+						</div>
+					</div> <!-- KEEP -->
+				</div>
+			</div>
+		</div>
+	</div><!--/#cause-list-->
+</template>
+
+<template name="solutionTemplate">
+	<div id="solution" class="parallax-section" style="background-position: 50% 285px;">
+		<div class="padding-top padding-bottom container">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="solution">
+						<h1>Solution</h1>
+						<p class="lead">Teaching with mobile phones.</p>
+						<p>imma explain the product here</p>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<div class="text-center overall-process">
+						<img class="img-responsive" src="/images/screenshot.jpg" alt="">
+						<div class="progress-info">
+							<p>this isn't ours but i found something similar, imma change this image once i build the product</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/#solution-->
+</template>
+
+<template name="teamTemplate">
+	<div id="our-member" class="padding-top-two padding-bottom-two">
+		<div class="container">
+			<div class="section-title">
+				<h1>Team</h1>
+			</div>
+			<div class="row">
+			 <div class="col-md-5ths col-sm-6 team">
+				 <div class="list-image border-three">
+					 <img class="img-responsive" src="/images/member1.jpg" alt="">
+				 </div>
+				 <div class="list-info">
+					 <h3>Raj Das</h3>
+					 <p><span>Founder, CEO, COO, CTO, Lead Developer</span></p>
+					 <p>Phillips Exeter 2019</p>
+				 </div>
+			 </div>
+			 <div class="col-md-5ths col-sm-6 team">
+				 <div class="list-image border-three">
+					 <img class="img-responsive" src="/images/member2.jpg" alt="">
+				 </div>
+				 <div class="list-info">
+					 <h3>Ogechi Nwankwoala</h3>
+					 <p><span>Founder, CEO, CCO, CDO, Visual Designer</span></p>
+					 <p>Phillips Exeter 2019</p>
+				 </div>
+			 </div>
+			 <div class="col-md-5ths col-sm-6 team">
+				 <div class="list-image border-three">
+					 <img class="img-responsive" src="/images/member3.jpg" alt="">
+				 </div>
+				 <div class="list-info">
+					 <h3>Yaseen Ahmed</h3>
+					 <p><span>Founder, CEO, CFO, Developer</span></p>
+					 <p>Phillips Exeter 2019</p>
+				 </div>
+			 </div>
+			 <div class="col-md-5ths col-sm-6 team">
+				 <div class="list-image border-three">
+					 <img class="img-responsive" src="/images/member4.jpg" alt="">
+				 </div>
+				 <div class="list-info">
+					 <h3>Calvin Henaku</h3>
+					 <p><span>Founder, CEO, CAO, Developer</span></p>
+					 <p>Phillips Exeter 2019</p>
+				 </div>
+			 </div>
+			 <div class="col-md-5ths col-sm-6 team center-block">
+				 <div class="list-image border-three">
+					 <img class="img-responsive" src="/images/member5.jpg" alt="">
+				 </div>
+				 <div class="list-info">
+					 <h3>Andrew Liquigan</h3>
+					 <p><span>Founder, CEO, CDO, Visual Designer</span></p>
+					 <p>Phillips Exeter 2019</p>
+				 </div>
+			 </div>
+			</div>
+		</div>
+	</div><!--/#our-member-->
+</template>
+
+<template name="contactTemplate">
+	<div id="contact">
+		<div class="container">
+			<div class="section-title">
+				<h1>Contact Us</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="row contact-details">
+						<div class="col-sm-4">
+							<span><i class="fa fa-map-marker"></i></span>
+							<p class="contact-info">1234 Street Name, City Name</p>
+						</div>
+						<div class="col-sm-4">
+							<span><i class="fa fa-phone"></i></span>
+							<p class="contact-info">+(123) 456-7890 </p>
+						</div>
+						<div class="col-sm-4">
+							<span><i class="fa fa-envelope"></i></span>
+							<a class="contact-info" href="#">email@ourwebsite.com</a>
+						</div>
+					</div>
+					<div class="contact-form">
+						<form id="contact-form" class="contact-form" name="contact-form"> <!-- TODO: MAKE CONTACT FORM WORK -->
+							<div class="row">
+								<div class="form-group col-sm-4">
+									<input type="text" name="name" class="form-control" required="required" placeholder="Name">
+									<input type="text" name="company" class="form-control" placeholder="Company">
+								</div>
+								<div class="form-group col-sm-4">
+									<input type="email" name="email" class="form-control" required="required" placeholder="Email Address">
+									<input type="url" name="website" class="form-control" placeholder="Website">
+								</div>
+								<div class="form-group col-sm-12">
+									<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary">Send Your Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--/#Contact-->
+</template>
+
+<template name="footerTemplate">
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="index.html"><img class="img-responsive" src="/images/logo.png" alt=""></a>
+				</div>
+				<div class="col-sm-4">
+					<div class="copyright-text">
+						<p>imma put some copyright shit here</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="footer-socials">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!--/#footer-->
+</template>
