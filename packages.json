@@ -1,6 +1,5 @@
 {
   "body-parser": "1.15.2",
   "smooch-core": "1.4.0",
-  "smooch-bot": "1.0.4",
   "jsonwebtoken": "5.7.0"
 }
